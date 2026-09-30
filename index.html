@@ -3,179 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scampoli di Pregio, Tessuti a Metraggio e Biancheria a Roma | Piattelli</title>
-  <meta name="description" content="Migliaia di metri di tessuti in pronta consegna, scampoli d'arredo, asciugamani e accappatoi a Roma. Grande Store a Via Federico Tozzi 21 e Atelier in Lungotevere Marzio 10.">
-  
-  <style>
-    :root {
-      --primary: #0F2042;       /* Blu Notte Piattelli */
-      --accent: #196F3D;        /* Verde Smeraldo Scampoli */
-      --bg-light: #F8F9FA;
-      --text: #2C3E50;
-      --white: #FFFFFF;
-    }
+  <title>Scampoli Piattelli Roma - Tessuti di Pregio a Stock, Fine Serie e Occasioni</title>
+  <meta name="description" content="Scampoli tessili d'alta gamma, fine serie e metrature a prezzo outlet a Roma. Tessuti per tendaggi, divani e imbottiti. Magazzino a Via Federico Tozzi 21 e Showroom a Lungotevere Marzio 10.">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-    body { color: var(--text); background-color: var(--white); line-height: 1.6; }
+  <!-- META TAG OPEN GRAPH PER ANTEPRIMA WHATSAPP / SOCIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scampoli & Tessuti a Stock Roma | Piattelli">
+  <meta property="og:description" content="Occasioni tessili e fine serie di alta qualità a Roma. Magazzino Via Federico Tozzi 21 | Showroom Lungotevere Marzio 10.">
+  <meta property="og:url" content="https://magopaolo-blip.github.io/scampolipiattelli/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&h=630&q=80">
 
-    /* Header */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-    .logo img { height: 85px; width: auto; display: block; }
-
-    /* Hero Section */
-    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; padding: 50px 5%; background: var(--bg-light); align-items: center; }
-    .hero-text h1 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
-    .hero-text p { font-size: 1.15rem; margin-bottom: 20px; color: #4A5568; }
-    .hero-img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-
-    /* Form Card */
-    .form-card { background: var(--white); padding: 32px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-top: 5px solid var(--accent); }
-    .form-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; font-weight: 700; }
-    .form-group { margin-bottom: 15px; }
-    .form-group input, .form-group select { width: 100%; padding: 12px 15px; border: 1px solid #CBD5E0; border-radius: 6px; font-size: 1rem; outline: none; }
-    .form-group input:focus { border-color: var(--accent); }
-    .btn-submit { width: 100%; background: var(--accent); color: var(--white); border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.3s; }
-    .btn-submit:hover { opacity: 0.92; }
-
-    /* Features */
-    .features { padding: 60px 5%; text-align: center; }
-    .features h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; }
-    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
-    .feature-item { padding: 30px 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--accent); text-align: left; }
-    .feature-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
-
-    /* Sezione Sedi */
-    .stores-section { padding: 50px 5%; background: var(--white); text-align: center; border-top: 1px solid #E2E8F0; }
-    .stores-section h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; font-weight: 800; }
-    .stores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; max-width: 1100px; margin: 0 auto; }
-    .store-card { background: var(--bg-light); border-radius: 10px; padding: 25px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .store-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-    .store-tag { display: inline-block; background: var(--primary); color: var(--white); font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; }
-    .store-card p { font-size: 0.95rem; color: #4A5568; margin-bottom: 10px; }
-    .store-card ul { list-style: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #2D3748; }
-    .store-card ul li { margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-
-    /* Floating WhatsApp Button */
-    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 14px 22px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 9999; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
-
-    /* Responsive */
-    @media (max-width: 850px) {
-      header { padding: 15px 5%; }
-      .logo img { height: 60px; }
-      .hero { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
-      .hero-text h1 { font-size: 1.8rem; }
-      .feature-item { text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="logo-scampoli.svg" alt="Piattelli Scampoli e Tessuti">
-    </div>
-    <div>
-      <a href="https://wa.me/393737502033" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.1rem;">💬 373 750 2033</a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-box">
+        <img src="logo-scampoli.svg" alt="Piattelli Scampoli Tessili" class="logo-img">
+      </div>
+      <div class="header-contact">
+        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20sugli%20scampoli%20e%20sulle%20metrature%20disponibili." target="_blank" class="phone-link">
+          💬 373 750 2033
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION CON FORM A DESTRA -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Scampoli di Pregio, Tessuti e Spugne a Roma</h1>
-      <p>Migliaia di metri di tessuti in pronta consegna, taglio al metro, spugne, asciugamani e accappatoi. Visita il grande Store di Via Tozzi 21 o lo Showroom di Lungotevere Marzio 10.</p>
+    <div class="container hero-container">
       
-      <!-- Grafica Vettoriale Tessuti e Scampoli -->
-      <svg class="hero-img" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="#0F2042"/>
-        <path d="M0 0 L800 0 L800 450 L0 450 Z" fill="#172554"/>
-        <path d="M 0 450 Q 200 300 400 380 T 800 250 L 800 450 Z" fill="#196F3D" opacity="0.8"/>
-        <path d="M 0 450 Q 300 200 550 320 T 800 180 L 800 450 Z" fill="#229954" opacity="0.6"/>
-        <path d="M 0 450 Q 150 180 350 220 T 800 120 L 800 450 Z" fill="#F1C40F" opacity="0.85"/>
-        <text x="50%" y="25%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="bold">SELEZIONE TESSUTI & BIANCHERIA</text>
-        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" fill="#FCF3CF" font-family="sans-serif" font-size="18" font-weight="600">Pronta Consegna • Taglio al Metro • Stock e Occasioni</text>
-      </svg>
-    </div>
+      <!-- COLONNA SINISTRA -->
+      <div class="hero-left">
+        <h1>Scampoli e Tessuti d'Arredo d'Alta Gamma a Prezzi Outlet</h1>
+        <p class="hero-sub">Ampia selezione di fine serie, pezze a stock e tagli di pregio per tendaggi, divani, poltrone e sartoria. Pronta consegna diretta dal nostro magazzino di Via Federico Tozzi 21.</p>
+        
+        <div class="hero-banner-card">
+          <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80" alt="Scampoli e Tessuti d'Arredo Piattelli">
+          <div class="banner-overlay-text">
+            <h3>OCCASIONI TESSILI & FINE SERIE</h3>
+            <p>Alta Qualità • Sconti fino al 70% • Disponibilità Immediata</p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Form Lead -->
-    <div class="form-card">
-      <h3>Richiedi Disponibilità Tessuti</h3>
-      <form action="https://formspree.io/f/TUO_ID_FORMSPREE" method="POST">
-        <div class="form-group">
-          <input type="text" name="nome" placeholder="Il tuo Nome" required>
+      <!-- COLONNA DESTRA (FORM RISALTATO) -->
+      <div class="hero-right">
+        <div class="form-card">
+          <h3>Richiedi Disponibilità / Metrature</h3>
+          <form class="lead-form">
+            <div class="form-group">
+              <input type="text" placeholder="Il tuo Nome" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Numero di Telefono" required>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Cosa stai cercando?</option>
+                <option value="tende">Scampoli per Tende e Tendaggi</option>
+                <option value="divani">Tessuti per Divani e Poltrone</option>
+                <option value="pelle-velluto">Pelli, Velluti o Tessuti Tecnici</option>
+                <option value="stock-b2b">Lotti e Stock Completi per B2B / Sartorie</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-green btn-block">Richiedi Disponibilità</button>
+          </form>
         </div>
-        <div class="form-group">
-          <input type="tel" name="telefono" placeholder="Numero di Telefono" required>
-        </div>
-        <div class="form-group">
-          <select name="prodotto" required>
-            <option value="" disabled selected>Che tessuto o prodotto cerchi?</option>
-            <option value="Scampoli d'arredo">Scampoli d'arredo e velluti</option>
-            <option value="Tessuti al metro">Tessuti a metraggio per tende/coperture</option>
-            <option value="Spugne/Accappatoi">Asciugamani, spugne e accappatoi</option>
-            <option value="Cotoni e Lini">Cotoni, lini e stoffe d'occasione</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-submit">Richiedi Info / Foto Disponibilità</button>
-      </form>
-    </div>
-  </section>
+      </div>
 
-  <!-- Features -->
-  <section class="features">
-    <h2>Perché scegliere gli scampoli e i tessuti Piattelli</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <h4>Ampia Selezione in Stock</h4>
-        <p>Centinaia di rotoli, scampoli pronti al taglio, spugne e biancheria di qualità nel Grande Store di Via Tozzi.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Prezzi da Ingrosso e Occasioni</h4>
-        <p>Partite speciali, rimanenze di tessuti pregiati e accessori casa a prezzi imbattibili.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Consulenza in Negozio</h4>
-        <p>Ti guidiamo nella scelta del tessuto ideale per metratura, pesantezza e destinazione d'uso.</p>
-      </div>
     </div>
   </section>
 
-  <!-- Sezione Sedi Roma -->
-  <section class="stores-section">
-    <h2>I Nostri Punti Vendita a Roma</h2>
-    <div class="stores-grid">
+  <!-- VANTAGGI -->
+  <section class="section section-advantages">
+    <div class="container">
+      <h2 class="section-heading center">Perché scegliere lo Stock e Scampoli Piattelli</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <h4>Tessuti di Grandi Marche</h4>
+          <p>Selezioniamo direttamente i migliori esuberi e fine serie di tessuti italiani ed europei di prima scelta.</p>
+        </div>
+        <div class="advantage-card">
+          <h4>Prezzi Vantaggiosi</h4>
+          <p>Qualità sartoriale e tessuti d'alta gamma a condizioni imbattibili con disponibilità immediata in magazzino.</p>
+        </div>
+        <div class="advantage-card">
+          <h4>Servizio di Confezione</h4>
+          <p>Oltre al tessuto al metro, puoi richiedere la lavorazione su misura nel nostro laboratorio interno di Via Tozzi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERIA REALIZZAZIONI E TESSUTI -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading center">Categorie Tessuti in Occasione</h2>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Tessuti per Tendaggi">
+          <div class="gallery-title">Tessuti & Lini per Tende</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Tessuti Imbottiti e Velluti">
+          <div class="gallery-title">Velluti & Tessuti Antimacchia</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Pelli e Microfibre">
+          <div class="gallery-title">Pelli, Ecopelli & Microfibre</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI AMPLIATE (6 RECENSIONI) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading center">Cosa Dicono i Nostri Clienti</h2>
+      <p class="section-sub center">La soddisfazione di privati, sarte e arredatori che acquistano i nostri tessuti a stock a Roma.</p>
       
-      <div class="store-card">
-        <span class="store-tag" style="background: var(--accent);">Grande Store & Esposizione</span>
-        <h3>📍 Via Federico Tozzi, 21</h3>
-        <p><strong>Reparto Scampoli, Metraggio e Biancheria</strong></p>
-        <p>Il grande punto vendita con l'esposizione completa: scampoli d'arredo, tessuti al metro, cotoni, velluti, spugne, asciugamani e accappatoi.</p>
-        <ul>
-          <li>📦 Migliaia di metri in pronta consegna</li>
-          <li>🧺 Spugne, accappatoi e biancheria casa</li>
-          <li>🅿️ Grande facilità di parcheggio</li>
-        </ul>
-      </div>
+      <div class="reviews-grid">
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Trovato un taglio di lino meraviglioso a un prezzo ridicolo rispetto ai listini standard. Laboratorio e magazzino super forniti a Via Tozzi!"</p>
+          <span><strong>Marta P.</strong> — Roma Monteverde</span>
+        </div>
 
-      <div class="store-card">
-        <span class="store-tag">Atelier Centro Storico</span>
-        <h3>📍 Lungotevere Marzio, 10</h3>
-        <p><strong>Showroom d'Arredo</strong></p>
-        <p>Punto di consulenza in centro a Roma per la visione di campionari tessili d'alta gamma e coordinati per interni.</p>
-        <ul>
-          <li>🏛️ Nel cuore di Roma (Zona Prati / Centro)</li>
-          <li>🎨 Selezione cartelle colori e campionari</li>
-          <li>🤝 Consulenze d'arredo su misura</li>
-        </ul>
-      </div>
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Cercavo del velluto per rifoderare due poltroncine vintage. Su WhatsApp mi hanno inviato subito le foto delle pezze disponibili in magazzino. Perfetti!"</p>
+          <span><strong>Gianluca F.</strong> — Roma Prati</span>
+        </div>
 
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Tessuti fantastici per tendaggi. Ho acquistato lo scampolo e mi hanno fatto anche la confezione su misura. Servizio completo e risparmio garantito."</p>
+          <span><strong>Cristina S.</strong> — Roma Parioli</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Siamo un laboratorio di scenografia e ci riforniamo regolarmente da Piattelli per pezze e stock d'arredo. Ampia scelta e grandissima cortesia."</p>
+          <span><strong>Claudio T.</strong> — Arredatore B2B</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Qualità del tessuto altissima a prezzo outlet. Personale esperto che ti guida nella scelta del metraggio corretto per il tuo progetto."</p>
+          <span><strong>Daniela M.</strong> — Roma EUR</span>
+        </div>
+
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Ho trovato un tessuto antimacchia per il divano che altrimenti sarebbe stato fuori budget. Ottima esperienza anche nello showroom di Lungotevere."</p>
+          <span><strong>Andrea V.</strong> — Roma Centro</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Tasto WhatsApp Fluttuante -->
-  <a href="https://wa.me/393737502033?text=Salve,%20vorrei%20informazioni%20sulla%20disponibilit%C3%A0%20di%20tessuti%20o%20scampoli." class="whatsapp-btn" target="_blank">
-    💬 Chiedi Info su WhatsApp
+  <!-- SEDI ESATTE -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading center">Le Nostre Sedi a Roma</h2>
+      <div class="locations-grid">
+        
+        <!-- LABORATORIO E MAGAZZINO VIA FEDERICO TOZZI 21 -->
+        <div class="location-box highlight">
+          <span class="loc-badge">Magazzino Stock & Laboratorio</span>
+          <h3>Via Federico Tozzi, 21</h3>
+          <p class="loc-sub">📍 Magazzino Operativo e Confezione</p>
+          <p>La sede operativa principale dove è custodito l'ampio magazzino scampoli, le pezze a stock e dove i nostri tappezzieri e sartine eseguono le lavorazioni.</p>
+          <ul>
+            <li>📦 Magazzino materiali e scampoli in pronta consegna</li>
+            <li>✂️ Sartoria interna per confezione e taglio su misura</li>
+            <li>🅿️ Facile accesso e comodo parcheggio riservato</li>
+          </ul>
+        </div>
+
+        <!-- SHOWROOM LUNGOTEVERE MARZIO 10 -->
+        <div class="location-box">
+          <span class="loc-badge dark">Atelier Centro Storico</span>
+          <h3>Lungotevere Marzio, 10</h3>
+          <p class="loc-sub">📍 Showroom di Rappresentanza</p>
+          <p>Atelier al centro di Roma ideale per visionare i campionari, discutere progetti d'arredo e selezionare i tessuti d'alta gamma.</p>
+          <ul>
+            <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
+            <li>🎨 Consultazione campionari esclusivi e coordinati</li>
+            <li>🤝 Appuntamenti dedicati per clienti e architetti</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container center">
+      <p><strong>Piattelli Scampoli & Tessuti a Stock</strong></p>
+      <p>Magazzino: Via Federico Tozzi, 21 - Roma | Showroom: Lungotevere Marzio, 10 - Roma</p>
+      <p class="copy">&copy; Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- BOTTONE WHATSAPP FLUTTUANTE -->
+  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20sulle%20metrature%20e%20sugli%20scampoli%20disponibili." class="whatsapp-sticky" target="_blank">
+    💬 Chatta su WhatsApp per Scampoli
   </a>
 
 </body>
