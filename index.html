@@ -10,8 +10,8 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Scampoli & Tessuti a Stock Roma | Piattelli">
   <meta property="og:description" content="Occasioni tessili e fine serie di alta qualità a Roma. Magazzino Via Federico Tozzi 21 | Showroom Lungotevere Marzio 10.">
-  <meta property="og:url" content="https://magopaolo-blip.github.io/scampolipiattelli/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:url" content="https://scampoli.piattelli.it/">
+  <meta property="og:image" content="https://scampoli.piattelli.it/scampoli-magazzino-piattelli.jpg">
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
         <img src="logo-scampoli.svg" alt="Piattelli Scampoli Tessili" class="logo-img">
       </div>
       <div class="header-contact">
-        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20sugli%20scampoli%20e%20sulle%20metrature%20disponibili." target="_blank" class="phone-link">
+        <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%20%E2%80%94%20Buongiorno%2C%20vorrei%20informazioni%20sugli%20scampoli%20e%20sulle%20metrature%20disponibili." target="_blank" class="phone-link">
           💬 373 750 2033
         </a>
       </div>
@@ -44,7 +44,7 @@
         <p class="hero-sub">Ampia selezione di fine serie, pezze a stock e tagli di pregio per tendaggi, divani, poltrone e sartoria. Pronta consegna diretta dal nostro magazzino di Via Federico Tozzi 21.</p>
         
         <div class="hero-banner-card">
-          <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80" alt="Scampoli e Tessuti d'Arredo Piattelli">
+          <img src="scampoli-magazzino-piattelli.jpg" alt="Scampoli e tessuti d'arredo nel magazzino Piattelli di Roma">
           <div class="banner-overlay-text">
             <h3>OCCASIONI TESSILI & FINE SERIE</h3>
             <p>Alta Qualità • Sconti fino al 70% • Disponibilità Immediata</p>
@@ -56,15 +56,15 @@
       <div class="hero-right">
         <div class="form-card">
           <h3>Richiedi Disponibilità / Metrature</h3>
-          <form class="lead-form">
+          <form class="lead-form" id="lead-form">
             <div class="form-group">
-              <input type="text" placeholder="Il tuo Nome" required>
+              <input type="text" id="lead-name" placeholder="Il tuo Nome" autocomplete="name" required>
             </div>
             <div class="form-group">
-              <input type="tel" placeholder="Numero di Telefono" required>
+              <input type="tel" id="lead-phone" placeholder="Numero di Telefono" autocomplete="tel" required>
             </div>
             <div class="form-group">
-              <select required>
+              <select id="lead-interest" required>
                 <option value="" disabled selected>Cosa stai cercando?</option>
                 <option value="tende">Scampoli per Tende e Tendaggi</option>
                 <option value="divani">Tessuti per Divani e Poltrone</option>
@@ -101,13 +101,30 @@
     </div>
   </section>
 
+  <!-- VIDEO DEL TITOLARE -->
+  <section class="section owner-video-section">
+    <div class="container owner-video-wrap">
+      <div class="owner-video-copy">
+        <span class="eyebrow">DAL MAGAZZINO PIATTELLI</span>
+        <h2 class="section-heading">Cesare Piattelli ti mostra scampoli e fine serie</h2>
+        <p>Cesare Piattelli, proprietario dei negozi, presenta direttamente una parte dell'assortimento disponibile nel magazzino di Via Federico Tozzi 21.</p>
+      </div>
+      <div class="owner-video-card">
+        <video controls playsinline preload="metadata" poster="scampoli-magazzino-piattelli.jpg">
+          <source src="cesare-piattelli-scampoli.mp4" type="video/mp4">
+          Il tuo browser non supporta la riproduzione video.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <!-- GALLERIA REALIZZAZIONI E TESSUTI -->
   <section class="section bg-light">
     <div class="container">
       <h2 class="section-heading center">Categorie Tessuti in Occasione</h2>
       <div class="gallery-grid">
         <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Tessuti per Tendaggi">
+          <img src="scampoli-magazzino-piattelli.jpg" alt="Scampoli e tessuti per tendaggi nel magazzino Piattelli">
           <div class="gallery-title">Tessuti & Lini per Tende</div>
         </div>
         <div class="gallery-card">
@@ -176,6 +193,7 @@
         
         <!-- LABORATORIO E MAGAZZINO VIA FEDERICO TOZZI 21 -->
         <div class="location-box highlight">
+          <img src="sede-viatozzi.png" alt="Sede Piattelli Arredocasa in Via Federico Tozzi 21 a Roma" class="location-photo">
           <span class="loc-badge">Magazzino Stock & Laboratorio</span>
           <h3>Via Federico Tozzi, 21</h3>
           <p class="loc-sub">📍 Magazzino Operativo e Confezione</p>
@@ -189,6 +207,7 @@
 
         <!-- SHOWROOM LUNGOTEVERE MARZIO 10 -->
         <div class="location-box">
+          <img src="sede-lungotevere.png" alt="Showroom Piattelli in Lungotevere Marzio 10 a Roma" class="location-photo">
           <span class="loc-badge dark">Atelier Centro Storico</span>
           <h3>Lungotevere Marzio, 10</h3>
           <p class="loc-sub">📍 Showroom di Rappresentanza</p>
@@ -214,9 +233,37 @@
   </footer>
 
   <!-- BOTTONE WHATSAPP FLUTTUANTE -->
-  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20sulle%20metrature%20e%20sugli%20scampoli%20disponibili." class="whatsapp-sticky" target="_blank">
+  <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%20%E2%80%94%20Buongiorno%2C%20vorrei%20informazioni%20sulle%20metrature%20e%20sugli%20scampoli%20disponibili." class="whatsapp-sticky" target="_blank">
     💬 Chatta su WhatsApp per Scampoli
   </a>
+
+  <script>
+    (function () {
+      const form = document.getElementById('lead-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const name = document.getElementById('lead-name').value.trim();
+        const phone = document.getElementById('lead-phone').value.trim();
+        const select = document.getElementById('lead-interest');
+        const interest = select.options[select.selectedIndex].text;
+
+        const message = [
+          'DILLO A PIATTELLI',
+          'Buongiorno, vorrei verificare la disponibilità di scampoli e metrature.',
+          '',
+          'Nome: ' + name,
+          'Telefono: ' + phone,
+          'Cerco: ' + interest,
+          '',
+          'Contatto da scampoli.piattelli.it'
+        ].join('\n');
+
+        window.open('https://wa.me/393737502033?text=' + encodeURIComponent(message), '_blank', 'noopener');
+      });
+    })();
+  </script>
 
 </body>
 </html>
