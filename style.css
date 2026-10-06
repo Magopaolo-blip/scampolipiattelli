@@ -20,7 +20,9 @@ body {
   font-family: var(--font);
   color: var(--text-main);
   background-color: #ffffff;
-  line-height: 1.5;
+  line-height: 1.58;
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
 }
 
 .container {
@@ -34,7 +36,7 @@ body {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 28px 0;
 }
 
 .bg-light {
@@ -42,7 +44,7 @@ body {
 }
 
 .section-heading {
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   color: var(--green-primary);
   margin-bottom: 8px;
   font-weight: 700;
@@ -50,13 +52,13 @@ body {
 
 .section-sub {
   color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 25px;
+  font-size: 1rem;
+  margin-bottom: 18px;
 }
 
 /* HEADER */
 .header {
-  padding: 15px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--border-color);
   background: #fff;
 }
@@ -77,33 +79,34 @@ body {
   font-weight: 700;
   color: var(--green-primary);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.08rem;
 }
+
 
 /* HERO SECTION */
 .hero {
-  padding: 35px 0;
+  padding: 26px 0 24px;
 }
 
 .hero-container {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 30px;
+  gap: 24px;
   align-items: flex-start;
 }
 
 .hero-left h1 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   color: var(--green-primary);
   line-height: 1.2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 800;
 }
 
 .hero-sub {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .hero-banner-card {
@@ -115,7 +118,7 @@ body {
 
 .hero-banner-card img {
   width: 100%;
-  height: 260px;
+  height: 250px;
   object-fit: cover;
   display: block;
 }
@@ -147,12 +150,12 @@ body {
   background: #ffffff;
   border: 2px solid var(--green-primary);
   border-radius: 10px;
-  padding: 25px;
+  padding: 18px;
   box-shadow: 0 8px 25px rgba(45, 106, 79, 0.12);
 }
 
 .form-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--green-primary);
   margin-bottom: 15px;
   text-align: center;
@@ -166,23 +169,24 @@ body {
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: 12px;
+  padding: 13px 12px;
+  min-height: 48px;
   border: 1px solid var(--border-color);
-  border-radius: 6px;
-  font-size: 0.9rem;
+  border-radius: 7px;
+  font-size: 1rem;
   font-family: inherit;
   background: #fff;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 13px 20px;
   border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   border: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: background 0.2s;
 }
 
@@ -203,13 +207,13 @@ body {
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 14px;
 }
 
 .advantage-card {
   background: #ffffff;
   border-left: 4px solid var(--green-primary);
-  padding: 20px;
+  padding: 17px;
   border-radius: 0 8px 8px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
@@ -221,7 +225,7 @@ body {
 }
 
 .advantage-card p {
-  font-size: 0.88rem;
+  font-size: 0.96rem;
   color: var(--text-muted);
 }
 
@@ -229,7 +233,7 @@ body {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 14px;
 }
 
 .gallery-card {
@@ -241,7 +245,7 @@ body {
 
 .gallery-card img {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
   display: block;
 }
@@ -249,7 +253,7 @@ body {
 .gallery-title {
   padding: 12px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   color: var(--green-primary);
   text-align: center;
 }
@@ -258,12 +262,12 @@ body {
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 14px;
 }
 
 .review-box {
   background: #ffffff;
-  padding: 22px;
+  padding: 18px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
   box-shadow: 0 3px 10px rgba(0,0,0,0.03);
@@ -280,14 +284,14 @@ body {
 
 .review-box p {
   font-style: italic;
-  font-size: 0.88rem;
-  margin-bottom: 12px;
+  font-size: 0.96rem;
+  margin-bottom: 10px;
   color: var(--text-main);
   line-height: 1.45;
 }
 
 .review-box span {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--green-primary);
 }
 
@@ -295,12 +299,12 @@ body {
 .locations-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 16px;
 }
 
 .location-box {
   background: #ffffff;
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
 }
@@ -311,15 +315,15 @@ body {
 
 .location-photo {
   display: block;
-  width: calc(100% + 50px);
-  height: 220px;
+  width: calc(100% + 40px);
+  height: 190px;
   object-fit: cover;
-  margin: -25px -25px 18px;
+  margin: -20px -20px 14px;
   border-radius: 8px 8px 0 0;
 }
 
 .location-box.highlight .location-photo {
-  margin-top: -22px;
+  margin-top: -17px;
 }
 
 .loc-badge {
@@ -339,7 +343,7 @@ body {
 }
 
 .location-box h3 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: var(--green-primary);
   margin-bottom: 4px;
 }
@@ -347,8 +351,8 @@ body {
 .loc-sub {
   font-weight: 600;
   color: var(--green-primary);
-  font-size: 0.88rem;
-  margin-bottom: 10px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
 }
 
 .location-box ul {
@@ -357,8 +361,8 @@ body {
 }
 
 .location-box li {
-  font-size: 0.88rem;
-  margin-bottom: 6px;
+  font-size: 0.94rem;
+  margin-bottom: 5px;
 }
 
 /* BOTTONE WHATSAPP FLUTTUANTE */
@@ -368,7 +372,7 @@ body {
   right: 20px;
   background-color: var(--whatsapp-color);
   color: #ffffff;
-  padding: 12px 20px;
+  padding: 13px 20px;
   border-radius: 30px;
   font-weight: 700;
   text-decoration: none;
@@ -385,7 +389,7 @@ body {
 .footer {
   background: var(--green-dark);
   color: #ffffff;
-  padding: 25px 0;
+  padding: 20px 0;
   font-size: 0.88rem;
 }
 
@@ -399,7 +403,73 @@ body {
   margin-top: 8px;
 }
 
-/* RESPONSIVE */
+/* VIDEO CESARE PIATTELLI */
+.owner-video-section {
+  background: #fff;
+  padding: 18px 0 22px;
+}
+
+.owner-video-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 22px;
+  align-items: center;
+  max-width: 900px;
+}
+
+.owner-video-copy {
+  align-self: center;
+}
+
+.owner-video-copy .section-heading {
+  margin-bottom: 8px;
+}
+
+.owner-video-copy p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 590px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--green-primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  margin-bottom: 6px;
+}
+
+.owner-video-card {
+  width: 270px;
+  justify-self: end;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.10);
+}
+
+.owner-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  object-fit: cover;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+/* Accessibilità e usabilità */
+a, button, input, select {
+  touch-action: manipulation;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid rgba(45, 106, 79, 0.35);
+  outline-offset: 2px;
+}
+
 @media (max-width: 900px) {
   .hero-container,
   .advantages-grid,
@@ -411,108 +481,165 @@ body {
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 600px) {
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* VIDEO CESARE PIATTELLI */
-.owner-video-section {
-  background: #fff;
-  padding-top: 20px;
-}
-
-.owner-video-wrap {
-  display: grid;
-  grid-template-columns: 1fr 0.72fr;
-  gap: 35px;
-  align-items: center;
-}
-
-.owner-video-copy p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  max-width: 620px;
-}
-
-.eyebrow {
-  display: inline-block;
-  color: var(--green-primary);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  margin-bottom: 8px;
-}
-
-.owner-video-card {
-  max-width: 360px;
-  justify-self: center;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-  background: #000;
-}
-
-.owner-video-card video {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 560px;
-  object-fit: contain;
-}
-
-@media (max-width: 900px) {
   .owner-video-wrap {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    max-width: 760px;
+    gap: 18px;
+  }
+
+  .owner-video-card {
+    width: 245px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
   .header-container {
-    gap: 12px;
+    gap: 10px;
   }
 
   .logo-img {
-    height: 52px;
+    height: 50px;
   }
 
   .phone-link {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 
   .hero {
-    padding-top: 24px;
+    padding: 20px 0;
+  }
+
+  .hero-container {
+    gap: 18px;
   }
 
   .hero-left h1 {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
+    line-height: 1.16;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
   }
 
   .hero-banner-card img {
-    height: 230px;
+    height: 215px;
+  }
+
+  .banner-overlay-text {
+    padding: 10px 8px;
+  }
+
+  .banner-overlay-text h3 {
+    font-size: 1rem;
+  }
+
+  .banner-overlay-text p {
+    font-size: 0.82rem;
   }
 
   .form-card {
-    padding: 20px;
+    padding: 18px;
+  }
+
+  .form-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .btn {
+    font-size: 1rem;
+    min-height: 50px;
   }
 
   .section {
-    padding: 32px 0;
+    padding: 24px 0;
   }
 
   .section-heading {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+    line-height: 1.2;
+  }
+
+  .advantages-grid,
+  .gallery-grid,
+  .locations-grid {
+    gap: 12px;
+  }
+
+  .advantage-card {
+    padding: 15px;
+  }
+
+  .owner-video-section {
+    padding: 20px 0 22px;
+  }
+
+  .owner-video-wrap {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 520px;
+  }
+
+  .owner-video-card {
+    width: min(100%, 300px);
+    justify-self: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .owner-video-copy {
+    text-align: left;
+  }
+
+  .gallery-card img {
+    height: 190px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .location-box {
+    padding: 18px;
+  }
+
+  .location-photo {
+    width: calc(100% + 36px);
+    height: 175px;
+    margin: -18px -18px 12px;
+  }
+
+  .location-box.highlight .location-photo {
+    margin-top: -15px;
   }
 
   .whatsapp-sticky {
-    left: 15px;
-    right: 15px;
-    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
     text-align: center;
-    padding: 11px 14px;
+    padding: 13px 14px;
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 18px 0 72px;
+    font-size: 0.92rem;
   }
 }
